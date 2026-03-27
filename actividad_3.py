@@ -9,3 +9,5 @@ from skimage.io import imread, imsave
 from skimage import img_as_ubyte, io
 
 print("Version de numpy:", np.__version__)
+print("Version de matplotlib:", plt.__version__)
+print("Version de pyclesperanto_prototype:", cle.__version__)
