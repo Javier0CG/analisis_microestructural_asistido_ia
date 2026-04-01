@@ -19,7 +19,7 @@ red_neuronal = tf.keras.Sequential([
                                   ])
 #print(red_neuronal.summary())
 
-input("segguir")
+
 red_neuronal.compile(
     optimizer=tf.keras.optimizers.SGD(learning_rate=0.01),
     loss='mean_squared_error'
