@@ -48,6 +48,6 @@ print(f"sesgo aprendido: {bias[0]}")
 X_test = np.array([[1],[5],[10],[15],[100]], dtype=float)
 predictions = red_neuronal.predict(X_test)
 
-print("Predicciones:")
+print("predicciones:")
 for i, val in enumerate(X_test):
     print(f"x = {val[0]} -> y_pred = {predictions[i][0]}")
