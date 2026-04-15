@@ -21,13 +21,13 @@ img_path = "/content/micro.jpg"
 imagen_original = io.imread(img_path)
 
 #img en gris
-image_original_gris = img_as_ubyte(io.imread(img_path, as_gray=True))
+imagen_original_gris = img_as_ubyte(io.imread(img_path, as_gray=True))
 
 #invertir img
-imagen_invertida = np.invert(imagen_original)
+imagen_invertida = np.invert(imagen_original_gris)
 
 #binarizar img
-imagen_binarizada_original = cle.binary_not(cle.threshold_otsu(image_original_gris))
+imagen_binarizada_original = cle.binary_not(cle.threshold_otsu(imagen_original_gris))
 imagen_binarizada_invertida = cle.binary_not(cle.threshold_otsu(imagen_invertida))
 
 #segmentar granos
